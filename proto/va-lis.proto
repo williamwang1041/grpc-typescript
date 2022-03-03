@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+// this package name has to be the same what is copied from
+package lis;
+
+service SampleService{
+  rpc sample_get_lab_tests(sample_id) returns (sample_test_id){}
+}
+
+message sample_id{
+  string sample_id = 1;
+}
+
+message TestID{
+  int32 test_id = 1;
+}
+
+message sample_test_id{
+
+  string sample_id = 1;
+  repeated TestID tests = 2;
+}
+
+
