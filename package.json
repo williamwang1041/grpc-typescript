@@ -1,8 +1,10 @@
 {
   "name": "ts-grpc-willw",
-  "version": "1.0.3",
-  "main": "./indexVa.ts",
-  "types": "./indexVA.d.ts",
+  "version": "1.0.8",
+  "main": "dist/client/indexVa.js", 
+  "types": "dist/client/indexVa.d.ts",
+  "type":"module",
+
   "license": "MIT",
   "devDependencies": {
     "@types/google-protobuf": "^3.7.2",
